@@ -12,4 +12,5 @@
     <string name="Address">Address</string>
     <string name="lastname">Last Name</string>
     <string name="firstname">First Name</string>
+    <string name="Add">Add Profile</string>
 </resources>
