@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ProfilePage</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="twitter">Twitter</string>
+    <string name="facebook">Facebook</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="f_value">0</string>
+    <string name="full_name">Fullname</string>
+    <string name="location">Location</string>
+    <string name="Address">Address</string>
+    <string name="lastname">Last Name</string>
+    <string name="firstname">First Name</string>
+</resources>

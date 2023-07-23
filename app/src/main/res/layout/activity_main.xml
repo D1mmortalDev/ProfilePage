@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_layout"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/btnSettings"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@android:color/transparent"
+        app:srcCompat="@drawable/baseline_settings_24" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgViewProfilePic"
+            style="@style/circular"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/user"
+            android:paddingStart="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:scaleType="fitXY"
+            android:textAlignment="center"
+            app:shapeAppearanceOverlay="@style/circular"
+            app:strokeColor="@color/white"
+            app:strokeWidth="3dp" />
+
+        <ImageButton
+            android:id="@+id/btnCamera"
+            android:layout_width="29dp"
+            android:layout_height="26dp"
+            android:layout_gravity="bottom|right"
+            app:srcCompat="@drawable/baseline_photo_camera_24" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/txtFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingStart="5dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="5dp"
+        android:paddingBottom="5dp"
+        android:text="@string/full_name"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/location"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtNoOfFollowers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/bg_light_cyan"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/f_value"
+                android:textAlignment="center"
+                android:textColor="@color/bg_1"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtFollowers"
+                android:layout_width="205dp"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_light_cyan"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/followers"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/bg_1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtViewNoOfFollowing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/bg_blue"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/f_value"
+                android:textAlignment="center"
+                android:textColor="@color/bg_1"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtFollowing"
+                android:layout_width="205dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/bg_blue"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/following"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/bg_1" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtVEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:text="@string/email"
+            android:textColor="@color/txt_color"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTxtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:inputType="text"
+            app:backgroundTint="@color/bg_blue" />
+
+        <TextView
+            android:id="@+id/txtVPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="@string/phone"
+            android:textColor="@color/txt_color"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTxtPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:inputType="text"
+            app:backgroundTint="@color/bg_blue" />
+
+        <TextView
+            android:id="@+id/txtVTwitter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="@string/twitter"
+            android:textColor="@color/txt_color"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTxtTwitter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:inputType="text"
+            android:singleLine="false"
+            app:backgroundTint="@color/bg_blue" />
+
+        <TextView
+            android:id="@+id/txtViewFacebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="@string/facebook"
+            android:textColor="@color/txt_color"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTxtFacebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:inputType="text"
+
+            app:backgroundTint="@color/bg_blue" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginEnd="20dp"
+            android:clickable="true"
+            app:backgroundTint="@color/bg_light_cyan"
+            app:srcCompat="@drawable/baseline_edit_24" />
+    </LinearLayout>
+
+</LinearLayout>
